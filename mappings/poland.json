@@ -1,0 +1,26 @@
+{
+  "id" : "9f360e11-603e-4338-9207-36169d1ee91c",
+  "name" : "ws",
+  "request" : {
+    "url" : "/ws",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToXml" : "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"\t\t\t\t  xmlns:gs=\"http://spring.io/guides/gs-producing-web-service\">   <soapenv:Header/>   <soapenv:Body>      <gs:getCountryRequest>         <gs:name>Poland</gs:name>      </gs:getCountryRequest>   </soapenv:Body></soapenv:Envelope>"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"><SOAP-ENV:Header/><SOAP-ENV:Body><ns2:getCountryResponse xmlns:ns2=\"http://spring.io/guides/gs-producing-web-service\"><ns2:country><ns2:name>Poland</ns2:name><ns2:population>38186860</ns2:population><ns2:capital>Warsaw</ns2:capital><ns2:currency>PLN</ns2:currency></ns2:country></ns2:getCountryResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>",
+    "headers" : {
+      "Accept" : "text/xml, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2",
+      "SOAPAction" : "\"\"",
+      "Content-Type" : "text/xml;charset=utf-8",
+      "Date" : "Sat, 28 Oct 2023 18:48:14 GMT",
+      "Keep-Alive" : "timeout=60"
+    }
+  },
+  "uuid" : "9f360e11-603e-4338-9207-36169d1ee91c",
+  "persistent" : true,
+  "scenarioName" : "scenario-2-ws",
+  "insertionIndex" : 2
+}

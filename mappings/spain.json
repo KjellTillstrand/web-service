@@ -1,0 +1,26 @@
+{
+  "id" : "7f6b85f9-7f56-4add-8149-63331279202d",
+  "name" : "ws",
+  "request" : {
+    "url" : "/ws",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "matchesXPath" : "//getCountryRequest/name[text()='Spain']"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"><SOAP-ENV:Header/><SOAP-ENV:Body><ns2:getCountryResponse xmlns:ns2=\"http://spring.io/guides/gs-producing-web-service\"><ns2:country><ns2:name>Spain</ns2:name><ns2:population>46704314</ns2:population><ns2:capital>Madrid</ns2:capital><ns2:currency>EUR</ns2:currency></ns2:country></ns2:getCountryResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>",
+    "headers" : {
+      "Accept" : "text/xml, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2",
+      "SOAPAction" : "\"\"",
+      "Content-Type" : "text/xml;charset=utf-8",
+      "Date" : "Sat, 28 Oct 2023 18:48:29 GMT",
+      "Keep-Alive" : "timeout=60"
+    }
+  },
+  "uuid" : "7f6b85f9-7f56-4add-8149-63331279202d",
+  "persistent" : true,
+  "scenarioName" : "scenario-1-ws",
+  "insertionIndex" : 1
+}
